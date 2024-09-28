@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1C927CA6-46D8-4D3B-B9B9-58CE07D8B73E}" SchemaVersion="110">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{1C927CA6-46D8-4D3B-B9B9-58CE07D8B73E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1C927CA6-46D8-4D3B-B9B9-58CE07D8B73E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Chris Kerr folder!" ID="{1DA630F4-F99A-403F-827D-43565AD81B0E}" ShortID="263574524">
+					<ChildrenList>
+						<MusicSwitchContainer Name="Nintendo Switch Container" ID="{81B68426-9C60-4681-AD1A-7BB917665DFF}" ShortID="163802179">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4EBE9388-60C7-4A20-AF35-05E78E8BB42E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CF4F398E-2B99-4408-BAC7-C1CD98CC93D6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Funky Music" ID="{493BEB76-F058-438A-A5C4-67070A408A6C}" ShortID="610592984">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4EBE9388-60C7-4A20-AF35-05E78E8BB42E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CF4F398E-2B99-4408-BAC7-C1CD98CC93D6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{39A66A0A-D8BC-45DA-97BF-39F601958D72}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{E68DD67A-1452-44E1-8AC6-148838E3CC4A}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{2FB16BED-480D-4F5A-A93C-B74540198B31}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{B1CD1F45-018C-4C29-8D9A-B9449A61CC77}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+						</MusicSwitchContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
